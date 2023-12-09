@@ -1,0 +1,419 @@
+.user_sign_up{
+    width: 450px;
+    margin:  0 auto;
+    padding-bottom: 10px;
+    h2{
+        font-size: 31px;
+        line-height: 36px;
+        font-weight: 700;
+        margin: 22px 0 35px;
+    }
+    form{
+        .input_box{
+            position: relative;
+
+            &:nth-child(1){
+                margin-bottom: 25px;
+            }
+
+            input{
+                width: 100%;          
+                background: transparent;
+                border: 2px solid #2F3336;
+                outline: none;
+                border-radius: 5px;
+                font-size: 1em;
+                color: #fff;
+                padding: 24px 20px 10px;
+                transition: .5s ease;
+
+                &:focus,
+                &:valid {
+                    border-color: var(--button-color);
+                }
+                
+                &:focus~label,
+                &:valid~label{
+                    top: 27%;
+                    left: 15px;
+                    font-size: .8em;
+                    padding: 0 6px;
+                    color: var(--button-color);
+                    
+                }
+            }
+            label{
+                font-size: 15px;
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+                color: var(--secondary-text-color);
+                pointer-events: none;
+                transition: .5s ease;
+            }
+        }
+
+        .filed_change{
+            text-align: right;
+            margin-top: 15px;
+
+            a{
+                color: rgb(29, 155, 240);
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 20px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .date_of_birth{
+            padding: 20px 0 100px;
+            h4{
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 400;
+                color: var(--secondary-text-color);
+                padding: 10px 0;
+            }
+
+            .select_date_of_birth{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 10px;
+
+
+                .select_box{
+                    border: 1px solid #2F3336;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding: 10px;
+                    border-radius: 5px;
+
+                    label{
+                        font-size: 13px;
+                        color: var(--secondary-text-color);
+                    }
+
+                    select{
+                        background-color: transparent;
+                        outline: none;
+                        color: var(--secondary-text-color);
+                        border: none;
+                        cursor: pointer;
+                        font-size: 15px;
+                        color: var(--text-color);
+
+                        option{
+                            background-color: var(--main-bg-color);
+                            cursor: pointer;
+                            font-size: 15px;
+                            color: var(--text-color);
+
+                        }
+                    }
+                }
+                .month{
+                    width: 48%;
+                }
+                .day{
+                    width: 26%;
+                }
+                .year{
+                    width: 26%;
+                }
+            }
+        }
+        button{
+            color: var(--secondary-bg-color);
+            background-color: #787A7A;
+            width: 100%;
+            border-radius: 20px;
+            font-size: 17px;
+            line-height: 20px;
+            padding: 16px 0;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+
+
+.auth_section_area{
+    .auth_login-content{
+        display: flex;
+        gap: 299px;
+        padding: 196px 0 158px;
+
+        .site_logo_area{
+            width: 43%;
+            text-align: center;
+            padding-top: 82px;
+
+            a{
+                img{
+                    width: 373px;
+                }
+            }
+        }
+        .auth_signup_area{
+            padding-left: 35px;
+            width: 57%;
+
+            h1{
+                font-size: 63px;
+                line-height: 84px;
+                font-family: "TwitterChirpExtendedHeavy";
+                font-weight: 700;
+                letter-spacing: -1.2px;
+                margin-bottom: 48px;
+            }
+            h4{
+                font-size: 31px;
+                line-height: 36px;
+                font-family: "TwitterChirpExtendedHeavy";
+                font-weight: 700;
+                margin-bottom: 32px;
+            }
+
+            .sugnup_buttons{
+                width: 300px;
+                max-width: 400px;
+                min-width: min-content;
+                svg{
+                    width: 17px;
+                    margin-right: 8px;
+                }
+                .login_google,
+                .login_apple,
+                .creact_account button,
+                .alrady_sign_up button{
+                    width: 300px;
+                    max-width: 400px;
+                    min-width: min-content;
+                    height: 41px;
+                    background-color: var(--text-white);
+                    text-align: center;
+                    gap: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+                    margin-bottom: 10px;
+                    a{
+                        color: var(--secondary-bg-color);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            .auth_divider{
+                margin: 20px 0 18px;
+                width: 100%;
+                border-bottom: 1px solid #2F3336;
+                position: relative;
+                
+                span{
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    text-align: center;
+                    top: 0px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    background-color: var(--main-bg-color);
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-family: "TwitterChirp";
+                    font-weight: 400;
+                }
+            }
+            .creact_account{
+                button{
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-family: "TwitterChirp";
+                    font-weight: 700;
+                    background-color: var(--button-color) !important;
+                    color: var(--text-white);
+                }
+                p{
+                    font-family: "TwitterChirp";
+                    font-weight: 400;  
+                    font-size: 11px;
+                    line-height: 12px;
+                    color: var(--secondary-text-color);
+
+                    a{
+                        color: var(--button-color);
+                    }
+                }
+            }
+            .alrady_sign_up{
+                margin-top: 40px;
+                h3{
+                    font-size: 17px;
+                    line-height: 20px;
+                    font-family: "TwitterChirp";
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+                button{
+                    background-color: transparent !important;
+                    border: 1px solid rgb(83, 100, 113);
+                    color: var(--button-color);
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-family: "TwitterChirp";
+                    font-weight: 700;
+                    &:hover{
+                        background-color: rgb(29,155, 240, 0.10) !important;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.auth_footer{
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        li{
+            color: var(--secondary-text-color);
+            font-size: 13px;
+            line-height: 16px;
+            font-family: "TwitterChirp";
+            font-weight: 400;
+            a{
+                color: var(--secondary-text-color);
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+// modal area
+.model_signin_popup{
+    .auth_login-content{
+        gap: 0 !important;
+        padding: 0px 0;
+        width: 300px;
+        max-width: 400px;
+        min-width: min-content;
+        margin: auto;
+
+
+        .sugnup_buttons{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h2{
+                font-size: 31px;
+                margin-bottom: 20px;
+            }
+
+            .auth_divider{
+                margin: 10px 0;
+            }
+            .alrady_sign_up{
+                margin: 0;
+            }
+            .creact_account{
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+    
+                    .input_box{
+                        position: relative;
+                        input{
+                            width: 100%;          
+                            background: transparent;
+                            border: 2px solid #2F3336;
+                            outline: none;
+                            border-radius: 5px;
+                            font-size: 1em;
+                            color: #fff;
+                            padding: 24px 20px 10px;
+                            transition: .5s ease;
+            
+                            &:focus,
+                            &:valid {
+                                border-color: var(--button-color);
+                            }
+                            
+                            &:focus~label,
+                            &:valid~label{
+                                top: 27%;
+                                left: 15px;
+                                font-size: .8em;
+                                padding: 0 6px;
+                                color: var(--button-color);
+                                
+                            }
+                        }
+                        label{
+                            font-size: 15px;
+                            position: absolute;
+                            top: 50%;
+                            left: 20px;
+                            transform: translateY(-50%);
+                            color: var(--secondary-text-color);
+                            pointer-events: none;
+                            transition: .5s ease;
+                        }
+                    }
+                    button{
+                        background-color: var(--text-white) !important;
+                        color: var(--secondary-bg-color);
+                    }
+                }
+            }
+            .alrady_sign_up{
+                button{
+                    color: var(--text-white) !important;
+                }
+            }
+            .create_new_account_item{
+                padding-top: 40px;
+                font-size: 15px;
+                line-height: 20px;
+                color: var(--secondary-text-color);
+
+                a{
+                    color: var(--button-color);
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

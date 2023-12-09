@@ -1,0 +1,95 @@
+
+
+/* Custom Font updates */
+@font-face {
+    font-family: TwitterChirpExtendedHeavy;
+    src: url(https://abs.twimg.com/fonts/chirp-extended-heavy-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-extended-heavy-web.woff) format('woff');
+    font-weight: 800;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/chirp-regular-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-regular-web.woff) format('woff');
+    font-weight: 400;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/chirp-medium-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-medium-web.woff) format('woff');
+    font-weight: 500;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/chirp-bold-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-bold-web.woff) format('woff');
+    font-weight: 700;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/chirp-heavy-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-heavy-web.woff) format('woff');
+    font-weight: 800;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TwitterChirp';
+}
+
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+button,input[type="submit"]{
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+::placeholder{
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+input, textarea{
+    outline: none;
+    resize: none;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+}
+
+.app-container{
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+.auth_container{
+    width: 1300px;
+    margin: 0 auto;
+}

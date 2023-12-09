@@ -1,0 +1,57 @@
+/* Dark Mode Styles */
+.dark-mode{
+    --main-bg-color: #000;
+    --secondary-bg-color: rgb(22, 24, 28);
+
+    --logo-icon-color: #e7e9ea;
+    --text-color: #e7e9ea;
+    --button-text-color: #e7e9ea;
+    --text-white: #fff;
+    --secondary-text-color: rgb(113, 118, 123);
+    --button-color: #1d9bf0;
+    --button-hover: rgba(26, 140, 216, 1.00);
+    --border: 1px solid #2F3336;
+    --dark-border-color: #2F3336;
+    --border-radius : 16px;
+    --border-radius-icon : 20px;
+    --search-input-color: #202327;
+    --search-input-text-color: #71767b;
+
+    --tranding-hover-color: rgba(255, 255,255,.03);
+
+    --box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+    --images-insaid-shadow: rgba(255, 255, 255, 0.03) 0px 0px 2px inset;
+    --hover-color: rgba(231, 233, 234, .1);
+    
+}
+
+/* Light Mode Styles */
+.light-mode {
+    --main-bg-color: #ffffff;
+    --secondary-bg-color: rgba(247,249,249,1.00);
+    --logo-icon-color: rgba(15,20,25,1.00);
+    --hover-color: rgba(15, 20, 25, .1);
+    --tranding-hover-color: rgba(0, 0, 0,.03);
+    --text-color: rgb(15, 20, 25);
+    --button-text-color: rgb(255, 255, 255);
+    --search-input-color: rgba(0, 0, 0,.03);
+
+    --hover-color-2: rgba(0, 0, 0,.03);
+
+
+    --text-white: #fff;
+    --secondary-text-color: rgb(83, 100, 113);
+    --button-color: #1d9bf0;
+    --button-hover: rgba(26, 140, 216, 1.00);
+    --border: 1px solid #eff3f4;
+    --dark-border-color: #2F3336;
+    --border-radius : 16px;
+    --border-radius-icon : 20px;
+    --search-input-text-color: #71767b;
+
+
+
+    --box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+    --images-insaid-shadow: rgba(255, 255, 255, 0.03) 0px 0px 2px inset;
+
+  }
