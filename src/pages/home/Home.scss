@@ -2,7 +2,7 @@
     display: flex;
     color: var(--text-color);
 
-
+    // Home page left side design
     .home_left_body{
         width: 258px;
 
@@ -129,6 +129,8 @@
         }
 
     }
+
+    // Home page Post area design
     .home_middle_body{
         width: 597px;
 
@@ -303,6 +305,8 @@
 
 
     }
+
+    // Home page Right area design
     .home_right_body{
         width: 385px;
         padding-left: 34px;
@@ -556,7 +560,8 @@
 
 
 
-.dar_mode_toggole {
+// dark more input field design
+.dark_mode_toggole {
     position: fixed;
     right: 0;
     top: 50%;

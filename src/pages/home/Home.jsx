@@ -2,22 +2,25 @@ import Swal from "sweetalert2";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { FaArrowRight } from "react-icons/fa";
 import { LuSettings } from "react-icons/lu";
-
-import "./Home.scss"
 import { useContext, useState } from "react";
 import { getLocalStorage, setLocalStorage, setLsDarkModeData } from "../../helper/SendDataLs";
 import { Post } from "../../component/Post/Post";
 import IsDarkModeContext from "../../context/IsDarkModeContext";
+import "./Home.scss"
 
 
 const Home = () => {
+
+  //get context form IsDarkModeContext file
   const {isDarkMode, setIsDarkMode} = useContext(IsDarkModeContext);
 
+  // Get Post data
   const [postForm, setPostForm] = useState({
     postData: "",
     postPhoto: ""
   });
 
+  // Post data value
   const handleInputValue = (e) => {
     setPostForm ((prevState) => (
       {
@@ -27,6 +30,7 @@ const Home = () => {
     ));    
   }     
 
+  // upload new post
   const handleOnSubmit = (e) => {
     e.preventDefault();
 
@@ -37,6 +41,7 @@ const Home = () => {
       });
     }else{ 
 
+      //send data ls
       setLocalStorage("userPost", postForm)
       
 
@@ -48,6 +53,7 @@ const Home = () => {
         timer: 1500
       });
 
+      //reset input fild
       setPostForm({
         postData: "",
         postPhoto: ""
@@ -55,9 +61,8 @@ const Home = () => {
     }
   }
 
-
-  const haldleDarkMode = () => {
-
+  // full website dark mode
+  const handleDarkMode = () => {
     if(isDarkMode == false){
       setIsDarkMode(true)
       setLsDarkModeData("inDarkMode", isDarkMode)
@@ -65,15 +70,15 @@ const Home = () => {
       setIsDarkMode(false)
       setLsDarkModeData("inDarkMode", isDarkMode)
     }
-
   }
-// get all data usage:
-const userData = getLocalStorage('userPost');
+  // get all data usage:
+  const userData = getLocalStorage('userPost');
+
   return (
     <>
 
-      <div className="dar_mode_toggole">
-          <input checked={isDarkMode} onClick={haldleDarkMode} className="checkbox" type="checkbox" />
+      <div className="dark_mode_toggole">
+          <input checked={ isDarkMode} onClick={handleDarkMode} className="checkbox" type="checkbox" /> 
       </div>
       <section className="twitter_home_body_section">
         <div className="container">
